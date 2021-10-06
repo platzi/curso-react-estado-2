@@ -14,21 +14,26 @@ import { Modal } from '../Modal';
 import { ChangeAlert } from '../ChangeAlert';
 
 function App() {
+  const { state, stateUpdaters } = useTodos();
+
   const {
     error,
     loading,
     searchedTodos,
-    completeTodo,
-    deleteTodo,
-    openModal,
-    setOpenModal,
     totalTodos,
+    completeTodo,
     completedTodos,
+    openModal,
     searchValue,
-    setSearchValue,
+  } = state;
+
+  const {
+    setOpenModal,
     addTodo,
+    deleteTodo,
+    setSearchValue,
     sincronizeTodos,
-  } = useTodos();
+  } = stateUpdaters;
   
   return (
     <React.Fragment>

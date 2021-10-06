@@ -7,8 +7,8 @@ function useLocalStorage(itemName, initialValue) {
     error,
     loading,
     item,
-   } = state;
-  
+  } = state;
+
   // ACTION CREATORS
   const onError = (error) => dispatch({
     type: actionTypes.error,
