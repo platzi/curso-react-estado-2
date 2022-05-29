@@ -50,7 +50,7 @@ function useTodos() {
     saveTodos(newTodos);
   };
   
-  const states = {
+  const state = {
     loading,
     error,
     totalTodos,
