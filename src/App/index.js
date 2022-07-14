@@ -21,15 +21,15 @@ function App() {
     loading,
     searchedTodos,
     totalTodos,
-    completeTodo,
     completedTodos,
     openModal,
     searchValue,
   } = state;
-
+  
   const {
     setOpenModal,
     addTodo,
+    completeTodo,
     deleteTodo,
     setSearchValue,
     sincronizeTodos,
